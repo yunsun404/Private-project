@@ -1,5 +1,5 @@
 # BugNote
-Every uh-oh has a reason
+Every uh-oh has a reason \n
 Tiny mistakes, big lessons
 
 프로젝트 주제: 개발자를 위한 오답노트
