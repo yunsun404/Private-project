@@ -1,0 +1,54 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* 모든 페이지의 본문을 감싸는 틀 */
+.main-container {
+  max-width: 1200px;      /* 헤더 내용물과 똑같은 너비 */
+  width: 100%;            /* 반응형 대응 */
+  margin: 0 auto;         /* 중앙 정렬 (핵심!) */
+  padding: 40px 20px;     /* 위아래 40px, 좌우 20px 여백 */
+  box-sizing: border-box; /* 패딩 포함 크기 계산 */
+  
+  /* (선택사항) 페이지 내용이 너무 적어도 화면 세로를 어느 정도 채우고 싶다면 */
+  min-height: calc(100vh - 80px); 
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

@@ -1,0 +1,53 @@
+/* 1. 바깥쪽 틀: 화면 전체 100% */
+.header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: white;
+  
+  /* 내부 박스를 화면 정중앙에 놓기 위함 */
+  display: flex;
+  justify-content: center; 
+}
+
+/* 2. 안쪽 박스: 여기가 핵심입니다 */
+.header-inner {
+  width: 100%;
+  max-width: 1200px; /* 본문과 같은 너비 */
+  height: 100%;
+  
+  display: flex; /* 가로 배치 */
+  justify-content: space-between; /* ⭐ 로고는 왼쪽 끝, 메뉴는 오른쪽 끝으로 밈 */
+  align-items: center; /* 세로 중앙 정렬 */
+  
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* 로고 꾸미기 */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 메뉴 꾸미기 */
+.nav {
+  display: flex;
+  gap: 40px; /* 메뉴 글자들 사이 간격 */
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
