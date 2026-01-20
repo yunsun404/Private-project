@@ -5,15 +5,13 @@
   text-align: center;
 }
 
-/* 모든 페이지의 본문을 감싸는 틀 */
+
 .main-container {
-  max-width: 1200px;      /* 헤더 내용물과 똑같은 너비 */
-  width: 100%;            /* 반응형 대응 */
-  margin: 0 auto;         /* 중앙 정렬 (핵심!) */
-  padding: 40px 20px;     /* 위아래 40px, 좌우 20px 여백 */
-  box-sizing: border-box; /* 패딩 포함 크기 계산 */
-  
-  /* (선택사항) 페이지 내용이 너무 적어도 화면 세로를 어느 정도 채우고 싶다면 */
+  max-width: 1280px;     
+  width: 100%;            
+  margin: 0 auto;        
+  padding: 40px 20px;     
+  box-sizing: border-box; 
   min-height: calc(100vh - 80px); 
 }
 
@@ -52,3 +50,5 @@
 .read-the-docs {
   color: #888;
 }
+
+

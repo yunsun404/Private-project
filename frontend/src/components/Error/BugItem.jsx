@@ -5,7 +5,7 @@ function BugItem({ bug }) {
       <p>{bug.description}</p>
 
       <p>
-        상태: {bug.solved ? "✅ 해결됨" : "❌ 미해결"}
+        상태: {bug.solved ? "해결됨" : "미해결"}
       </p>
 
       <div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { dummyBugs } from "../data/dummyBugs"; // 데이터 가져오기
-import "./ErrorList.css"; // CSS 파일 연결
+import "./BugList.css"; // CSS 파일 연결
 
 // 작성 페이지에 있는 카테고리 목록과 동일하게 구성
 const categories = [
@@ -71,3 +71,4 @@ function ErrorList() {
 }
 
 export default ErrorList;
+//목록 페이지

@@ -25,7 +25,7 @@ function Home() {
     "기타",
   ]
 
-  // 버튼 클릭 시 작성 페이지로 이동 (데이터 들고 감)
+  // 버튼 클릭 시 작성 페이지로 이동 
   const handleGoToWrite = () => {
     navigate("/write", {
       state: {
@@ -35,7 +35,7 @@ function Home() {
     })
   }
 
-  // ✅ [추가] 회원가입 페이지 이동 함수
+  // [추가] 회원가입 페이지 이동 함수
   const handleGoToSignup = () => {
     navigate("/signup")
   }
@@ -51,7 +51,7 @@ function Home() {
       </div>
 
       <div className="home-layout">
-        {/* ✅ 왼쪽: 에러 기록하기 (미니 폼 적용) */}
+        {/*  왼쪽: 에러 기록하기 (미니 폼 적용) */}
         <div className="card">
           <h3>에러 기록하기</h3>
           <p>내가 겪은 에러를 빠르게 시작해보세요</p>
@@ -96,7 +96,7 @@ function Home() {
             {/* 버튼 색상은 Home.css에서 .login-form button { background-color: #007bff; } 로 설정됩니다 */}
             <button>로그인</button>
             
-            {/* ✅ 클릭 시 회원가입으로 이동하도록 수정됨 */}
+            {/*  클릭 시 회원가입으로 이동하도록 수정됨 */}
             <div className="signup-link" onClick={handleGoToSignup}>
               회원가입하기
             </div>

@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react"
 import { useLocation } from "react-router-dom"
-import "./ErroWrite.css" // 파일명 오타(ErroWrite) 그대로 유지했습니다.
-
+import "./BugWrite.css" 
 function ErrorWrite() {
   const location = useLocation()
 
   const [status, setStatus] = useState("resolved")
   const [errorTitle, setErrorTitle] = useState("")
 
-  // ✅ [추가] 태그 관련 상태 관리
+  
   const [tags, setTags] = useState([]) 
   const [tagInput, setTagInput] = useState("")
 
@@ -30,30 +29,30 @@ function ErrorWrite() {
 
   useEffect(() => {
     if (location.state) {
-      // 제목 가져오기
+      
       if (location.state.title) {
         setErrorTitle(location.state.title);
       }
     }
   }, [location.state]);
 
-  // ✅ [추가] 태그 입력 핸들러 (엔터 키 감지)
+  
   const handleTagKeyDown = (e) => {
-    // 한글 입력 중 엔터 칠 때 이벤트 중복 발생 방지 (e.nativeEvent.isComposing)
+    
     if (e.key === "Enter" && !e.nativeEvent.isComposing) {
-      e.preventDefault() // 폼 자동 제출 방지
+      e.preventDefault() 
       
       const newTag = tagInput.trim()
       
-      // 내용이 있고, 중복되지 않은 태그만 추가
+      
       if (newTag && !tags.includes(newTag)) {
         setTags([...tags, newTag])
-        setTagInput("") // 입력창 초기화
+        setTagInput("") 
       }
     }
   }
 
-  // ✅ [추가] 태그 삭제 핸들러
+ 
   const removeTag = (tagToRemove) => {
     setTags(tags.filter((tag) => tag !== tagToRemove))
   }
@@ -122,7 +121,7 @@ function ErrorWrite() {
           />
         </div>
 
-        {/* ✅ [추가] 태그 입력 칸 */}
+        {/*  [추가] 태그 입력 칸 */}
         <div className="form-group">
           <label>태그</label>
           <div className="tag-input-wrapper">
