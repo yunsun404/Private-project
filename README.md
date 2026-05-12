@@ -10,3 +10,5 @@ Tiny mistakes, big lessons
 언어: 자바
 
 vs code, react
+
+쿄쿄쿄
